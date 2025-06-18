@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jasa Layanan Pembuatan Gambar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <style>
+     .judul {
+      font-family: 'Poppins', sans-serif;
+    }
+    .subjudul {
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      margin: 0;
+      font-family: 'Geneva';
+      background: black;
+    }
+
+    /* HEADER */
+    header {
+      background: red;
+      position: relative;
+      padding: 20px;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: url('https://media.giphy.com/media/3oz8xKaR836UJOYeOc/giphy.gif') repeat;
+      opacity: 0.4;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 1;
+    }
+    .logo img {
+      width: 100px;
+      height: auto;
+    }
+
+    .judul {
+      text-align: center;
+      color: white;
+      font-size: 50px;
+      font-weight: bold;
+      position: relative;
+      z-index: 1;
+      animation: warnaBerubah 8s infinite;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    @keyframes warnaBerubah {
+      0% { color: white; }
+      33% { color: skyblue; }
+      66% { color: black; }
+      100% { color: white; }
+    }
+
+    .subjudul {
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+      text-shadow: 1px 1px 2px black;
+      z-index: 1;
+      position: relative;
+    }
+
+    .separator {
+      height: 5px;
+      background: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.7);
+    }
+
+    /* BODY */
+    main {
+      background: linear-gradient(black, #111);
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      background-image: linear-gradient(45deg, rgba(0,255,255,0.1) 25%, transparent 25%, transparent 75%, rgba(0,255,255,0.1) 75%),
+                        linear-gradient(-45deg, rgba(0,255,255,0.1) 25%, transparent 25%, transparent 75%, rgba(0,255,255,0.1) 75%);
+      background-size: 60px 60px;
+    }
+
+    .katalog-item {
+      background: #222;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+      width: 250px;
+    }
+
+    .katalog-item img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .btn-wa {
+      display: block;
+      margin-top: 10px;
+      background: green;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px;
+      border-radius: 5px;
+      font-family: sans-serif;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    footer img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 600px) {
+      .judul { font-size: 36px; }
+      .subjudul { font-size: 16px; }
+      .katalog-item { width: 90%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="Gambar 0" alt="Logo" />
+    </div>
+    <div class="judul">Banner Toko</div>
+    <div class="subjudul">Pilih katalog sesuai kode atau bisa sesuai keinginan</div>
+  </header>
+
+  <div class="separator"></div>
+
+  <main>
+    <!-- Ganti src sesuai link gambar asli jika sudah tersedia -->
+    <!-- 6 gambar katalog -->
+    <div class="katalog-item">
+      <img src="Gambar 1" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 2" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 3" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 4" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 5" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 6" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 7" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 8" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 9" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 10" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 11" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 12" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 13" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 14" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 15" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 16" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 17" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 18" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 19" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 20" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 21" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 22" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 23" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 24" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 25" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 26" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 27" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 28" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 29" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 30" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 31" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 32" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 33" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 34" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 35" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 36" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 37" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 38" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 39" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 40" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 41" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 42" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 43" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 44" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 45" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 46" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 47" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 48" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 49" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 50" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 51" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 52" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 53" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 54" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 55" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 56" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 57" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 58" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 59" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 60" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 61" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 62" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 63" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 64" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 65" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 66" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 67" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 68" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 69" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 70" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 71" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 72" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 73" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 74" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 75" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+	<div class="katalog-item">
+      <img src="Gambar 76" />
+      <a class="btn-wa" href="https://wa.me/6282146262873">Pesan/Hub</a>
+    </div>
+  </main>
+
+  <footer>
+    <img src="Gambar 000" alt="Footer Gambar" />
+  </footer>
+</body>
+</html>
